@@ -34,6 +34,7 @@
 //-------------------------------------------------------------------------------
 -(void)viewWillAppear:(BOOL)animated {
     self.lblIntro.text  = maIntroTitles[self.iPageIndex];
+    self.lblIntro.adjustsFontSizeToFitWidth = YES;
     self.imgIntro.image = [UIImage imageNamed:maIntroImgs[self.iPageIndex]];
     if (self.iPageIndex == 2)
     {

@@ -87,8 +87,18 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wrt-sB-w6r" userLabel="btnAdd">
+                                <rect key="frame" x="340" y="18" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Boton" image="add.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAdd:" destination="Hoz-cP-Dqx" eventType="touchUpInside" id="2h1-ip-XcS"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qXT-iT-vTD" userLabel="tblMain">
-                                <rect key="frame" x="0.0" y="50" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="46" width="320" height="512"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -99,14 +109,176 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tblMain" destination="qXT-iT-vTD" id="xpb-A2-knb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prf-4o-PJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205" y="320"/>
+            <point key="canvasLocation" x="1208" y="320"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="a42-zL-jmM">
+            <objects>
+                <viewController storyboardIdentifier="Details" id="p2o-Gj-ysZ" customClass="Details" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Knn-uC-up0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="iLR-xO-F8X" userLabel="imgHolder">
+                                <rect key="frame" x="60" y="29" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FOG-1p-yUO" userLabel="lblGroup">
+                                <rect key="frame" x="60" y="243" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aristotele Sandoval" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hID-RM-QUV" userLabel="lblState">
+                                <rect key="frame" x="60" y="302" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jalisco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vdI-u0-kSS" userLabel="lblPoliticName">
+                                <rect key="frame" x="60" y="273" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.6887058213222339" blue="0.065175634169433394" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k5y-1y-Hay" userLabel="lblDescription">
+                                <rect key="frame" x="60" y="338" width="200" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.26998500631313127" green="0.26998500631313127" blue="0.26998500631313127" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4NQ-mw-XFp" userLabel="btnOk">
+                                <rect key="frame" x="88" y="503" width="144" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.4253413888" blue="0.46975381459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Enterado">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddPressed:" destination="5ct-It-fIs" eventType="touchUpInside" id="u7a-cS-G4Q"/>
+                                    <action selector="btnOkPressed:" destination="p2o-Gj-ysZ" eventType="touchUpInside" id="kpC-Az-sKf"/>
+                                    <action selector="btnSkipPressed:" destination="Qhg-vO-UPR" eventType="touchUpInside" id="ESb-j7-yW5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgHolder" destination="iLR-xO-F8X" id="b8a-zJ-bTJ"/>
+                        <outlet property="lblDescription" destination="k5y-1y-Hay" id="ZDc-J1-lct"/>
+                        <outlet property="lblGroup" destination="FOG-1p-yUO" id="Cff-QP-Vb5"/>
+                        <outlet property="lblPoliticName" destination="vdI-u0-kSS" id="crp-ax-aHT"/>
+                        <outlet property="lblState" destination="hID-RM-QUV" id="HF5-JX-PDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yko-BW-Y70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208" y="936"/>
+        </scene>
+        <!--Add New-->
+        <scene sceneID="cdh-Fs-Qzr">
+            <objects>
+                <viewController storyboardIdentifier="AddNew" id="5ct-It-fIs" customClass="AddNew" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1FN-ne-z9m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default.jpg" id="u42-Bg-qEn" userLabel="imgHolder">
+                                <rect key="frame" x="85" y="81" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado" minimumFontSize="17" id="DCN-K4-q1G" userLabel="txtState">
+                                <rect key="frame" x="60" y="282" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Partido Politico" minimumFontSize="17" id="7kI-it-SB6" userLabel="txtGroup">
+                                <rect key="frame" x="60" y="244" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uoG-mK-izI" userLabel="btnAdd">
+                                <rect key="frame" x="88" y="510" width="144" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.4253413888" blue="0.46975381459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Agregar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddPressed:" destination="5ct-It-fIs" eventType="touchUpInside" id="70K-y9-Q1p"/>
+                                    <action selector="btnSkipPressed:" destination="Qhg-vO-UPR" eventType="touchUpInside" id="FzP-Uh-ksN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fhs-NX-gJn" userLabel="btnCancel">
+                                <rect key="frame" x="6" y="27" width="102" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.4253413888" blue="0.46975381459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancelar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCancelPressed:" destination="5ct-It-fIs" eventType="touchUpInside" id="RwF-Ks-ghM"/>
+                                    <action selector="btnSkipPressed:" destination="Qhg-vO-UPR" eventType="touchUpInside" id="Tq3-DT-ZxM"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descripcion..." id="qGJ-BH-9eB" userLabel="txtViewDesc">
+                                <rect key="frame" x="60" y="365" width="200" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92280224116161613" green="0.92280224116161613" blue="0.92280224116161613" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gobernador" minimumFontSize="17" id="a8T-qw-b0v" userLabel="txtPoliticName">
+                                <rect key="frame" x="60" y="320" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DyS-4U-f95" userLabel="btnAddImg">
+                                <rect key="frame" x="88" y="126" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="add.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddImgPressed:" destination="5ct-It-fIs" eventType="touchUpInside" id="Q3i-ZL-JvL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgHolder" destination="u42-Bg-qEn" id="RVH-ZE-D6B"/>
+                        <outlet property="txtGroup" destination="7kI-it-SB6" id="a32-pC-hLj"/>
+                        <outlet property="txtPoliticName" destination="a8T-qw-b0v" id="zXP-LJ-m1b"/>
+                        <outlet property="txtState" destination="DCN-K4-q1G" id="1lG-ds-mSq"/>
+                        <outlet property="txtViewDesc" destination="qGJ-BH-9eB" id="HbH-al-J5A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKf-nm-B1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="320"/>
         </scene>
     </scenes>
     <resources>
+        <image name="add.png" width="256" height="256"/>
         <image name="bandera2.png" width="632" height="414"/>
+        <image name="default.jpg" width="1024" height="680"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

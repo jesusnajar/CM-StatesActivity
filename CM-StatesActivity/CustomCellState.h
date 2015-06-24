@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imgLogo;
 @property (strong, nonatomic) IBOutlet UILabel *lblState;
 @property (strong, nonatomic) IBOutlet UILabel *lblPoliticName;
+@property (strong, nonatomic) IBOutlet UILabel *lblGroup;
 
 @end

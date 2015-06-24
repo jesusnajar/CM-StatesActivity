@@ -10,4 +10,10 @@
 
 @interface Home : UIViewController
 
+//Actions
+- (IBAction)btnAdd:(id)sender;
+
+//Objects
+@property (strong, nonatomic) IBOutlet UITableView *tblMain;
+
 @end

@@ -16,6 +16,10 @@ NSMutableArray      *maIntroImgs;
 NSMutableArray      *maStates;
 NSMutableArray      *maPoliticNames;
 NSMutableArray      *maLogos;
+NSMutableArray      *maGroups;
+NSMutableArray      *maDesc;
+
+int                 miCellIndex = 0;
 
 @implementation Declarations
 
