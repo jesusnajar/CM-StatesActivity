@@ -8,6 +8,7 @@
 
 #import "CustomCellState.h"
 
+
 @implementation CustomCellState
 
 - (void)awakeFromNib {

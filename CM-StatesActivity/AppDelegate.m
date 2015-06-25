@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import <Pushwoosh/PushNotificationManager.h>
 
-@interface AppDelegate ()
+#define LOCATIONS_FILE @"PWLocationTracking"
+#define LOCATIONS_FILE_TYPE @"log"
+
+@interface AppDelegate () <PushNotificationDelegate> {
+    PushNotificationManager *pushManager;
+}
 
 @end
 
@@ -16,7 +22,32 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)])
+    {
+        // use registerUserNotificationSettings
+        // iOS 8 Notifications
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+        
+        [application registerForRemoteNotifications];
+    } else
+    {
+        // use registerForRemoteNotifications
+    }
+#else
+    // use registerForRemoteNotifications
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+#endif
+    
+    pushManager = [PushNotificationManager pushManager];
+    pushManager.delegate = self;
+    [pushManager handlePushReceived:launchOptions];
+    
+    if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
+        
+        [pushManager startLocationTracking];
+    }
+    
     return YES;
 }
 
@@ -123,5 +154,27 @@
         }
     }
 }
+
+//agregamos las siguientes lineas de codigo para las notificaciones
+
+// system push notification registration success callback, delegate to pushManager
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [[PushNotificationManager pushManager] handlePushRegistration:deviceToken];
+}
+
+// system push notification registration error callback, delegate to pushManager
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    [[PushNotificationManager pushManager] handlePushRegistrationFailure:error];
+}
+
+// system push notifications callback, delegate to pushManager
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [[PushNotificationManager pushManager] handlePushReceived:userInfo];
+}
+
+- (void) onPushAccepted:(PushNotificationManager *)pushManager withNotification:(NSDictionary *)pushNotification {
+    NSLog(@"Push notification received");
+}
+
 
 @end
