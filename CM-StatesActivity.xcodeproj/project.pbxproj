@@ -33,6 +33,7 @@
 		890041FB1B3D9B030009AD10 /* intro_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 890041F81B3D9B030009AD10 /* intro_03.png */; };
 		890041FC1B3D9B030009AD10 /* intro_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 890041F91B3D9B030009AD10 /* intro_01.png */; };
 		890042001B3D9C9C0009AD10 /* pri.png in Resources */ = {isa = PBXBuildFile; fileRef = 890041FF1B3D9C9C0009AD10 /* pri.png */; };
+		890042021B3DC8EE0009AD10 /* CM-StatesActivity_video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 890042011B3DC8EE0009AD10 /* CM-StatesActivity_video.mov */; };
 		89C5D39F1B3AE1E6003FC36D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C5D39E1B3AE1E6003FC36D /* AVFoundation.framework */; };
 		89C5D3A11B3AE208003FC36D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C5D3A01B3AE208003FC36D /* ImageIO.framework */; };
 		89C5D3A31B3AE218003FC36D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C5D3A21B3AE218003FC36D /* SystemConfiguration.framework */; };
@@ -115,6 +116,7 @@
 		890041F81B3D9B030009AD10 /* intro_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro_03.png; sourceTree = "<group>"; };
 		890041F91B3D9B030009AD10 /* intro_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro_01.png; sourceTree = "<group>"; };
 		890041FF1B3D9C9C0009AD10 /* pri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pri.png; sourceTree = "<group>"; };
+		890042011B3DC8EE0009AD10 /* CM-StatesActivity_video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "CM-StatesActivity_video.mov"; sourceTree = "<group>"; };
 		89C5D39E1B3AE1E6003FC36D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		89C5D3A01B3AE208003FC36D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		89C5D3A21B3AE218003FC36D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -198,6 +200,7 @@
 				89C5D3A01B3AE208003FC36D /* ImageIO.framework */,
 				89C5D39E1B3AE1E6003FC36D /* AVFoundation.framework */,
 				89C5D3A61B3AE2FB003FC36D /* pushwoosh-ios-sdk-master */,
+				890042031B3DC90F0009AD10 /* video */,
 				08911B971B3A33B700642DEA /* Images */,
 				08F276BA1B391DA800B0A75D /* CM-StatesActivity */,
 				08F276D71B391DA800B0A75D /* CM-StatesActivityTests */,
@@ -291,6 +294,14 @@
 				08F276E91B391E0700B0A75D /* CustomCellState.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		890042031B3DC90F0009AD10 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				890042011B3DC8EE0009AD10 /* CM-StatesActivity_video.mov */,
+			);
+			name = video;
 			sourceTree = "<group>";
 		};
 		89C5D3A61B3AE2FB003FC36D /* pushwoosh-ios-sdk-master */ = {
@@ -503,6 +514,7 @@
 				08F276CC1B391DA800B0A75D /* Images.xcassets in Resources */,
 				89C5D3D91B3AE2FB003FC36D /* hierarchy.html in Resources */,
 				890042001B3D9C9C0009AD10 /* pri.png in Resources */,
+				890042021B3DC8EE0009AD10 /* CM-StatesActivity_video.mov in Resources */,
 				89C5D3DB1B3AE2FB003FC36D /* disclosure.png in Resources */,
 				890041FB1B3D9B030009AD10 /* intro_03.png in Resources */,
 				89C5D3D21B3AE2FB003FC36D /* PWTags.html in Resources */,
