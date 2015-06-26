@@ -20,6 +20,14 @@
 /**********************************************************************************************/
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //Round user image and add a white border
+    
+    self.btnOk.layer.borderColor    = [UIColor clearColor].CGColor;
+    self.btnOk.layer.borderWidth    = 2.0;
+    self.btnOk.clipsToBounds        = YES;
+    self.btnOk.layer.cornerRadius   = 4;
+
     [self initController];
     // Do any additional setup after loading the view.
 }

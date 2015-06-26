@@ -36,20 +36,20 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    maStates        = [[NSMutableArray alloc] initWithObjects: @"Colima", @"Jalisco", @"Nayarit", @"Nayarit", @"Nayarit", @"Nayarit", @"Nayarit", @"Nayarit", @"Nayarit", @"Nayarit",nil];
-    maGroups        = [[NSMutableArray alloc] initWithObjects: @"PRI", @"PAN", @"PRD", @"PRD", @"PRD",@"PRD", @"PRD", @"PRD", @"PRD", @"PRD",nil];
-    maPoliticNames  = [[NSMutableArray alloc] initWithObjects: @"Mario Moreno", @"Aristoteles Sandoval", @"Roberto Sandoval",  @"Roberto Sandoval",   @"Roberto Sandoval", @"Roberto Sandoval", @"Roberto Sandoval", @"Roberto Sandoval", @"Roberto Sandoval", @"Roberto Sandoval",nil];
-    maLogos         = [[NSMutableArray alloc] initWithObjects: @"pri.png", @"pan.png", @"prd.png", @"prd.png", @"prd.png", @"prd.png", @"prd.png", @"prd.png", @"prd.png", @"prd.png",nil];
-    maDesc          = [[NSMutableArray alloc] initWithObjects: @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",
-                       @"bla bla bla bla bla bla bla bla bla bla bla bla bla",nil];
+    maStates        = [[NSMutableArray alloc] initWithObjects: @"Campeche", @"Chiapas", @"Colima", @"Guanajuato", @"Guerrero", @"Hidalgo", @"Jalisco", @"México", @"Nayarit", @"Oaxaca",nil];
+    maGroups        = [[NSMutableArray alloc] initWithObjects: @"PRI", @"PVEM", @"PRI", @"PAN", @"PRD",@"PRI", @"PRI", @"PRI", @"PRI", @"MORENA",nil];
+    maPoliticNames  = [[NSMutableArray alloc] initWithObjects: @"Fernando Ortega", @"Manuel Velasco", @"Mario Anguiano",  @"Miguel Márquez",   @"Rogelio Ortega", @"Francisco Olvera", @"Aristoteles Sandoval", @"Eruviel Ávila", @"Roberto Sandoval", @"Gabino Cué",nil];
+    maLogos         = [[NSMutableArray alloc] initWithObjects: @"pri.png", @"verde.png", @"pri.png", @"pan.png", @"prd.png", @"pri.png", @"pri.png", @"pri.png", @"pri.png", @"morena.png",nil];
+    maDesc          = [[NSMutableArray alloc] initWithObjects: @"16 septiembre 2009\n15 septiembre 2015\nLic. en Ciencias Politicas\nUniversidad Autónoma de Campeche",
+                       @"8 diciembre 2012\n7 diciembre 2018\nLic. en Derecho\nUniversidad Humanitas",
+                       @"1 noviembre 2009\n31 octubre 2015\nLic. en Economía\nUniversidad de Colima",
+                       @"26 septiembre 2012\n25 septiembre 2018\nLic. en Derecho\nU. de La Salle Bajío",
+                       @"26 octubre 2014\n31 marzo 2015\nLic. en Sociología\nUniversidad Autónoma de Guerrero",
+                       @"1 abril 2011\n31 marzo 2016\nLic. en Derecho\nUniversidad Autónoma del Estado de Hidalgo",
+                       @"1 marzo 2013\n28 febrero 2019\nLic. en Derecho\nU.de.G.",
+                       @"15 septiembre 2011\n14 septiembre 2017\nDr. en Derecho\nUniversidad Nacional Autonóma de México",
+                       @"19 septiembre 2011\n18 septiembre 2017\nEstudios parciales\nIng. en Agronoma",
+                       @"1 diciembre 2010\n30 noviembre 2016\nLic. en Economía\nTecnológico de Monterrey",nil];
 }
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods

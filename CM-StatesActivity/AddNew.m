@@ -19,6 +19,12 @@ UIImagePickerController *imgPicker;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //Round user image and add a white border
+    
+    self.btnAdd.layer.borderColor    = [UIColor clearColor].CGColor;
+    self.btnAdd.layer.borderWidth    = 2.0;
+    self.btnAdd.clipsToBounds        = YES;
+    self.btnAdd.layer.cornerRadius   = 4;
     [self initController];
     // Do any additional setup after loading the view.
 }

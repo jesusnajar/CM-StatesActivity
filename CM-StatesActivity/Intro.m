@@ -25,6 +25,9 @@
     self.btnSkip.layer.borderWidth    = 2.0;
     self.btnSkip.clipsToBounds        = YES;
     self.btnSkip.layer.cornerRadius   = 4;
+    
+    //self.lblIntro.font = [UIFont fontWithName:@"System" size:20.0];
+    
 }
 //-------------------------------------------------------------------------------
 - (void)didReceiveMemoryWarning {

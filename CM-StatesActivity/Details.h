@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblState;
 @property (strong, nonatomic) IBOutlet UILabel *lblPoliticName;
 @property (strong, nonatomic) IBOutlet UILabel *lblDescription;
+@property (strong, nonatomic) IBOutlet UIButton *btnOk;
 
 //Actions
 - (IBAction)btnOkPressed:(id)sender;

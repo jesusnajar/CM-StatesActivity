@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtPoliticName;
 @property (strong, nonatomic) IBOutlet UITextField *txtGroup;
 @property (strong, nonatomic) IBOutlet UITextView *txtViewDesc;
+@property (strong, nonatomic) IBOutlet UIButton *btnAdd;
 
 //Actions
 - (IBAction)btnAddImgPressed:(id)sender;

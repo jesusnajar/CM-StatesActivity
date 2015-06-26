@@ -43,8 +43,9 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
+    
     maIntroTitles   = [[NSMutableArray alloc] initWithObjects: @"Consulta gobernantes de\ncada estado", @"Agrega nuevo gobernante\na la lista", @"Información detallada\npor estado", nil];
-    maIntroImgs     = [[NSMutableArray alloc] initWithObjects: @"intro_01.png", @"intro_02.png", @"intro_03.png", nil];
+    maIntroImgs     = [[NSMutableArray alloc] initWithObjects: @"intro_01.png", @"intro_02.jpg", @"intro_03.png", nil];
     
     [self createPageViews];
 }
