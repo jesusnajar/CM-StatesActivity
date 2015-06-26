@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>82DD5170-FDD3-41E2-AFEC-47D3A6A0E2A8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CM-StatesActivity</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C409720BF27CE885CE0BC0B6A8F2A6262C44E68E</key>
+		<string>https://github.com/jesusnajar/CM-StatesActivity</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CM-StatesActivity.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C409720BF27CE885CE0BC0B6A8F2A6262C44E68E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jesusnajar/CM-StatesActivity</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C409720BF27CE885CE0BC0B6A8F2A6262C44E68E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C409720BF27CE885CE0BC0B6A8F2A6262C44E68E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CM-StatesActivity</string>
+		</dict>
+	</array>
+</dict>
+</plist>
